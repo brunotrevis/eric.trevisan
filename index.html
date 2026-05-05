@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ERICtrevisan — Fotografia e filme de casamento. A sua história de amor contada com delicadeza." />
+  <title>ERICtrevisan — Fotografia & Filme de Casamento</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Italiana&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ============== HEADER ============== -->
+  <header class="header" data-header>
+    <a href="#inicio" class="header__logo" aria-label="ERICtrevisan — início">
+      <img src="assets/icon-tr.png" alt="ERICtrevisan" class="logo logo--icon" />
+      <img src="assets/logo.png" alt="ERICtrevisan" class="logo logo--wordmark" />
+    </a>
+
+    <nav class="header__nav" aria-label="Navegação principal">
+      <a href="#galeria">Galeria</a>
+      <a href="#fotografia">Fotografia</a>
+      <a href="#filme">Filme</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato" class="nav-cta">Contato</a>
+    </nav>
+
+    <button class="header__menu-btn" aria-label="Abrir menu" data-menu-btn>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+    <nav>
+      <a href="#galeria">Galeria</a>
+      <a href="#fotografia">Fotografia</a>
+      <a href="#filme">Filme</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ============== HERO (3 fotos centralizadas, H1 único) ============== -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" data-hero-slider>
+        <img src="assets/fotos/hero-01.jpg" alt="Abraço íntimo dos noivos" class="hero__slide is-active" />
+        <img src="assets/fotos/hero-02.jpg" alt="Noiva com véu e arco floral" class="hero__slide" loading="lazy" />
+        <img src="assets/fotos/hero-03.jpg" alt="Saída dos noivos com confete em preto e branco" class="hero__slide" loading="lazy" />
+      </div>
+
+      <div class="hero__text">
+        <span class="ornament" aria-hidden="true"></span>
+        <h1 class="display hero__title" data-reveal="up" data-reveal-delay="120">
+          <span class="hero__title-line-1">A sua história</span>
+          <span class="hero__title-line-2"><em>de amor</em></span>
+        </h1>
+        <a href="#galeria" class="btn btn--cream btn--shimmer" data-reveal="up" data-reveal-delay="320">
+          <span>Ver Galeria</span>
+        </a>
+      </div>
+
+      <div class="hero__controls" aria-label="Controle das fotos principais">
+        <button class="slider-arrow slider-arrow--prev" type="button" data-hero-prev aria-label="Foto anterior">←</button>
+        <button class="slider-arrow slider-arrow--next" type="button" data-hero-next aria-label="Próxima foto">→</button>
+      </div>
+    </section>
+
+    <!-- ============== GALERIA (slider editorial — sem descrição) ============== -->
+    <section class="section galeria has-pattern" id="galeria">
+      <div class="section__inner">
+        <header class="section__header center">
+          <p class="eyebrow" data-reveal="up">Trabalhos</p>
+          <span class="ornament" aria-hidden="true"></span>
+          <h2 class="display large" data-reveal="up" data-reveal-delay="80">Histórias em <em>imagem & cinema</em></h2>
+        </header>
+
+        <div class="galeria-editorial" data-gallery-slider data-reveal="up" data-reveal-delay="200">
+          <div class="galeria-editorial__stage">
+            <figure class="gallery-slide is-active">
+              <img src="assets/fotos/foto-01.jpg" alt="Noivos ao golden hour em preto e branco" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-02.jpg" alt="Noiva ao golden hour com bouquê e véu" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-03.jpg" alt="Noiva com luz natural e bouquê de copos-de-leite" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-04.jpg" alt="Beijo dos noivos com bolhas de sabão" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-05.jpg" alt="Beijo com bouquê erguido" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-06.jpg" alt="Noivos em ponte de madeira" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-07.jpg" alt="Noivos em momento íntimo na igreja" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-08.jpg" alt="Beijo na testa em arco" loading="lazy" />
+            </figure>
+            <figure class="gallery-slide">
+              <img src="assets/fotos/foto-09.jpg" alt="Retrato editorial da noiva com bouquê" loading="lazy" />
+            </figure>
+          </div>
+
+          <div class="galeria-editorial__nav">
+            <button class="slider-arrow" type="button" data-gallery-prev aria-label="Foto anterior">←</button>
+            <div class="gallery-dots" data-gallery-dots aria-label="Selecionar imagem da galeria"></div>
+            <button class="slider-arrow" type="button" data-gallery-next aria-label="Próxima foto">→</button>
+          </div>
+        </div>
+
+        <div class="section-cta gallery-cta" data-reveal="up" data-reveal-delay="260">
+          <a href="#fotografia" class="btn btn--cream btn--shimmer"><span>Ver Pacotes</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FOTOGRAFIA / PACOTES ============== -->
+    <section class="section section--light pacotes has-pattern" id="fotografia">
+      <div class="section__inner">
+        <header class="section__header center">
+          <p class="eyebrow" data-reveal="up">Fotografia</p>
+          <span class="ornament" aria-hidden="true"></span>
+          <h2 class="display large" data-reveal="up" data-reveal-delay="80">Pacotes</h2>
+          <p class="section__lead" data-reveal="up" data-reveal-delay="160">
+            Cada pacote inclui making-of da noiva e do noivo, cerimônia
+            religiosa ou civil, recepção e festa, e a entrega completa
+            das fotos digitais do evento.
+          </p>
+        </header>
+
+        <div class="pacotes__grid" id="pacotes-grid">
+          <article class="pacote box-hover" data-reveal="up">
+            <img src="assets/icons/CAMERA.png" alt="" class="card-icon package-icon" aria-hidden="true">
+            <h3 class="serif">Pacote Basic</h3>
+            <ul>
+              <li>Cobertura completa com 1 fotógrafo</li>
+              <li>Making-of, cerimônia, recepção e festa</li>
+              <li>Entrega de todas as fotos digitais</li>
+            </ul>
+            <div class="pacote__footer">
+              <div class="price-tag light">Investimento <strong>R$ 2.500,00</strong></div>
+              <p class="muted">Fotógrafo extra opcional R$ 700,00</p>
+              <button class="add-to-orcamento" data-add-item
+                      data-id="foto-basic" data-name="Pacote Basic" data-price="2500" data-group="foto">
+                <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+                <span class="add-to-orcamento__label">Adicionar ao orçamento</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="pacote featured box-hover" data-reveal="up" data-reveal-delay="120">
+            <img src="assets/icons/BRILHO.png" alt="" class="card-icon package-icon package-icon--standard" aria-hidden="true">
+            <span class="badge">Mais escolhido</span>
+            <h3 class="serif">Pacote Standard</h3>
+            <ul>
+              <li>Cobertura completa com 1 fotógrafo</li>
+              <li>Álbum 25×25 com 20 páginas</li>
+              <li>Fotos digitais via galeria online</li>
+            </ul>
+            <div class="pacote__footer">
+              <div class="price-tag light">Investimento <strong>R$ 3.500,00</strong></div>
+              <p class="muted">Fotógrafo extra opcional R$ 500,00</p>
+              <button class="add-to-orcamento" data-add-item
+                      data-id="foto-standard" data-name="Pacote Standard" data-price="3500" data-group="foto">
+                <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+                <span class="add-to-orcamento__label">Adicionar ao orçamento</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="pacote box-hover" data-reveal="up" data-reveal-delay="240">
+            <img src="assets/icons/DIAMANTE.png" alt="" class="card-icon package-icon" aria-hidden="true">
+            <h3 class="serif">Pacote Premium</h3>
+            <ul>
+              <li>Cobertura completa + galeria digital</li>
+              <li>Álbum 30×30 com 20 páginas</li>
+              <li>Ensaio Pré Wedding com 20 fotos digitais</li>
+              <li>Fotógrafo extra <em>(bônus)</em></li>
+            </ul>
+            <div class="pacote__footer">
+              <div class="price-tag light">Investimento <strong>R$ 4.700,00</strong></div>
+              <p class="muted" aria-hidden="true">&nbsp;</p>
+              <button class="add-to-orcamento" data-add-item
+                      data-id="foto-premium" data-name="Pacote Premium" data-price="4700" data-group="foto">
+                <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+                <span class="add-to-orcamento__label">Adicionar ao orçamento</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FILME ============== -->
+    <section class="section section--light filme" id="filme">
+      <div class="section__inner">
+        <header class="section__header center">
+          <p class="eyebrow" data-reveal="up">Filme de Casamento</p>
+          <span class="ornament" aria-hidden="true"></span>
+          <h2 class="display large" data-reveal="up" data-reveal-delay="80">A sua história<br/><em>de Amor</em></h2>
+        </header>
+
+        <div class="filme__grid">
+          <div class="filme__media" data-reveal="up">
+            <video
+              src="https://res.cloudinary.com/dcjapqz1r/video/upload/v1777948241/VIDEO_DEMO_z2qhfs.mp4"
+              autoplay muted loop playsinline preload="metadata"
+              poster="assets/fotos/hero-01.jpg"
+            ></video>
+          </div>
+
+          <div class="filme__entrega">
+            <h3 class="serif" data-reveal="up">Entrega</h3>
+            <ul class="entrega-list">
+              <li data-reveal="up" data-reveal-delay="80">
+                <strong>Vídeo Pré Wedding</strong> com duração de até <strong>1min e 30 segundos</strong>,
+                entregue (e postado) na semana do evento.
+              </li>
+              <li data-reveal="up" data-reveal-delay="160">
+                <strong>Vídeo para reel</strong>, com os melhores momentos do evento,
+                de <strong>até 1min e 30 segundos</strong>, entregue em
+                <strong>48 horas úteis</strong> após o evento.
+              </li>
+              <li data-reveal="up" data-reveal-delay="240">
+                <strong>Filme de Casamento</strong>, com os melhores momentos do dia,
+                duração de <strong>15 minutos</strong>, entregue em
+                <strong>45 dias úteis</strong> após o evento.
+              </li>
+            </ul>
+            <div class="price-tag" data-reveal="up" data-reveal-delay="320">
+              Investimento <strong>R$ 3.200,00</strong>
+            </div>
+            <button class="add-to-orcamento add-to-orcamento--filme" data-add-item
+                    data-id="filme" data-name="Filme de Casamento" data-price="3200" data-group="filme">
+              <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+              <span class="add-to-orcamento__label">Adicionar ao orçamento</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== ADICIONAIS (interligados ao Filme) ============== -->
+    <section class="section adicionais has-pattern">
+      <div class="section__inner">
+        <header class="section__header center">
+          <p class="eyebrow" data-reveal="up">Complementos do Filme</p>
+          <span class="ornament" aria-hidden="true"></span>
+          <h2 class="display" data-reveal="up" data-reveal-delay="80">Serviços Adicionais</h2>
+          <p class="interlock-note" data-reveal="up" data-reveal-delay="160">
+            Disponíveis exclusivamente em conjunto com o Filme de Casamento.
+          </p>
+        </header>
+
+        <div class="adicionais__grid">
+          <article class="add-card box-hover" data-reveal="up">
+            <img src="assets/icons/CLAQUETE.png" alt="" class="card-icon add-icon" aria-hidden="true">
+            <h3>Same Day Edit</h3>
+            <p>Filme editado e reproduzido durante a festa.</p>
+            <span class="price-pill">Investimento R$ 800,00</span>
+            <button class="add-to-orcamento add-to-orcamento--ghost" data-add-item
+                    data-id="add-sde" data-name="Same Day Edit" data-price="800" data-group="adicional">
+              <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+              <span class="add-to-orcamento__label">Adicionar</span>
+            </button>
+          </article>
+          <article class="add-card box-hover" data-reveal="up" data-reveal-delay="80">
+            <img src="assets/icons/DRONE.png" alt="" class="card-icon add-icon" aria-hidden="true">
+            <h3>Drone</h3>
+            <p>Imagens de drone no pré wedding e no dia do casamento.</p>
+            <span class="price-pill">Investimento R$ 800,00</span>
+            <button class="add-to-orcamento add-to-orcamento--ghost" data-add-item
+                    data-id="add-drone" data-name="Drone" data-price="800" data-group="adicional">
+              <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+              <span class="add-to-orcamento__label">Adicionar</span>
+            </button>
+          </article>
+          <article class="add-card box-hover" data-reveal="up" data-reveal-delay="160">
+            <img src="assets/icons/FILMADORA.png" alt="" class="card-icon add-icon" aria-hidden="true">
+            <h3>Cerimônia na Íntegra</h3>
+            <p>Filme de casamento com a cerimônia na íntegra.</p>
+            <span class="price-pill">Investimento R$ 1.200,00</span>
+            <button class="add-to-orcamento add-to-orcamento--ghost" data-add-item
+                    data-id="add-cerimonia" data-name="Cerimônia na Íntegra" data-price="1200" data-group="adicional">
+              <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+              <span class="add-to-orcamento__label">Adicionar</span>
+            </button>
+          </article>
+          <article class="add-card box-hover" data-reveal="up" data-reveal-delay="240">
+            <img src="assets/icons/ALIANCA.png" alt="" class="card-icon add-icon" aria-hidden="true">
+            <h3>Love Story</h3>
+            <p>História do casal contada em um filme com entrevistas.</p>
+            <span class="price-pill">Investimento R$ 600,00</span>
+            <button class="add-to-orcamento add-to-orcamento--ghost" data-add-item
+                    data-id="add-love" data-name="Love Story" data-price="600" data-group="adicional">
+              <span class="add-to-orcamento__icon" aria-hidden="true"></span>
+              <span class="add-to-orcamento__label">Adicionar</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== DEPOIMENTOS ============== -->
+    <section class="section section--light depoimentos has-pattern" id="depoimentos">
+      <div class="section__inner">
+        <header class="section__header center">
+          <p class="eyebrow" data-reveal="up">Depoimentos</p>
+          <span class="ornament" aria-hidden="true"></span>
+          <h2 class="display" data-reveal="up" data-reveal-delay="80">O que dizem <em>as noivas</em></h2>
+        </header>
+
+        <div class="depoimentos__grid">
+          <blockquote data-reveal="up">
+            <p>
+              Foi um dos fornecedores que mais amei ter investido nesse dia abençoado.
+              Agradeço imensamente pela atenção, carinho e amor transmitidos em todo o
+              trabalho — desde o pré wedding até o término do casamento. As fotos
+              estão maravilhosas, já quero postar todas.
+            </p>
+            <cite>— Noiva</cite>
+          </blockquote>
+          <blockquote data-reveal="up" data-reveal-delay="120">
+            <p>
+              Que trabalho incrível do Eric, juro! Muito paciencioso com a gente —
+              a galera queria tirar fotos com os celulares e ele super deixou.
+              Só foi embora quando realmente acabou todas as fotos. Ele foi incrível.
+            </p>
+            <cite>— Noiva</cite>
+          </blockquote>
+        </div>
+        <div class="section-cta depoimentos-cta" data-reveal="up" data-reveal-delay="180">
+          <a href="#pacotes-grid" class="btn btn--ink btn--shimmer"><span>Pedir orçamento</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SOBRE ============== -->
+    <section class="section sobre has-pattern" id="sobre">
+      <div class="section__inner two-col">
+        <div class="sobre__image" data-reveal="up">
+          <img src="assets/eric.jpg" alt="Eric Trevisan" />
+        </div>
+        <div class="sobre__text">
+          <p class="eyebrow" data-reveal="up">Sobre Mim</p>
+          <span class="ornament" aria-hidden="true"></span>
+          <h2 class="display" data-reveal="up" data-reveal-delay="80">Olá, eu sou o <em>Eric</em></h2>
+          <p data-reveal="up" data-reveal-delay="160">
+            Há mais de uma década dedico minha vida a registrar histórias.
+            Acredito que cada casamento carrega gestos invisíveis — um olhar
+            trocado, uma mão que aperta a outra antes do altar, o riso
+            cúmplice no fim da festa. É isso que busco em cada clique e
+            em cada cena: a verdade do que vocês são quando estão juntos.
+          </p>
+          <p data-reveal="up" data-reveal-delay="240">
+            Trabalho com fotografia e filme em conjunto, para que nada se perca
+            — do detalhe da aliança ao último brinde. O resultado é um filme
+            sensível, fotos atemporais, e a sensação de reviver o dia todas
+            as vezes que você quiser.
+          </p>
+          <a href="#contato" class="link-arrow" data-reveal="up" data-reveal-delay="320">Vamos conversar →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTATO ============== -->
+    <section class="section contato has-pattern" id="contato">
+      <div class="section__inner">
+        <div class="contato__content">
+          <p class="eyebrow" data-reveal="up">Contato</p>
+          <span class="ornament" aria-hidden="true"></span>
+          <h2 class="display large" data-reveal="up" data-reveal-delay="80">
+            Vamos contar a sua <em>história?</em>
+          </h2>
+
+          <div class="contato__channels" data-reveal="up" data-reveal-delay="240">
+            <a href="https://wa.me/5542998617310" class="contato__btn btn--shimmer" target="_blank" rel="noopener"><span>WhatsApp</span></a>
+            <a href="https://www.instagram.com/eric.trevisan/" class="contato__btn ghost" target="_blank" rel="noopener"><span>Instagram</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#inicio" class="header__logo">
+        <img src="assets/logo.png" alt="ERICtrevisan" class="logo logo--wordmark" />
+      </a>
+      <p>© <span data-year></span> ERICtrevisan. Fotografia & Filme de Casamento — Brasil.</p>
+    </div>
+  </footer>
+
+  <!-- ============== ORÇAMENTO BUILDER (calculadora) ============== -->
+  <!-- Barra flutuante: aparece só após primeiro item adicionado -->
+  <aside class="orcamento-bar" data-orcamento-bar aria-hidden="true">
+    <div class="orcamento-bar__inner">
+      <div class="orcamento-bar__info">
+        <span class="orcamento-bar__count" data-orcamento-count>0 itens</span>
+        <span class="orcamento-bar__sep" aria-hidden="true">·</span>
+        <span class="orcamento-bar__total" data-orcamento-total>R$ 0,00</span>
+      </div>
+      <button class="orcamento-bar__btn" type="button" data-orcamento-open>
+        <span>Ver orçamento</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Modal de orçamento -->
+  <div class="orcamento-modal" data-orcamento-modal aria-hidden="true" role="dialog" aria-labelledby="orcamento-modal-title">
+    <div class="orcamento-modal__backdrop" data-orcamento-close></div>
+    <div class="orcamento-modal__panel" role="document">
+      <button class="orcamento-modal__close" type="button" data-orcamento-close aria-label="Fechar">×</button>
+
+      <header class="orcamento-modal__header">
+        <p class="eyebrow">Seu orçamento</p>
+        <span class="ornament" aria-hidden="true"></span>
+        <h3 class="orcamento-modal__title" id="orcamento-modal-title">Pronto para conversar?</h3>
+        <p class="orcamento-modal__lead">Confira os itens selecionados. Ao enviar, abrimos o WhatsApp com a sua seleção pronta.</p>
+      </header>
+
+      <ul class="orcamento-list" data-orcamento-list></ul>
+
+      <p class="orcamento-modal__hint" data-orcamento-hint hidden>
+        💡 Os Serviços Adicionais são entregues em conjunto com o <strong>Filme de Casamento</strong>.
+      </p>
+
+      <!-- Data desejada (opcional) -->
+      <div class="orcamento-date">
+        <label class="orcamento-date__label" for="orcamento-data">
+          <span class="orcamento-date__title">Data desejada</span>
+          <span class="orcamento-date__optional">opcional</span>
+        </label>
+        <p class="orcamento-date__helper">
+          Se já tem uma data em mente, podemos verificar a disponibilidade. Se ainda não, deixe em branco.
+        </p>
+        <div class="orcamento-date__field">
+          <input type="date" id="orcamento-data" data-orcamento-date class="orcamento-date__input" />
+          <button type="button" class="orcamento-date__clear" data-orcamento-date-clear aria-label="Limpar data" hidden>×</button>
+        </div>
+      </div>
+
+      <div class="orcamento-modal__footer">
+        <div class="orcamento-modal__total-row">
+          <span>Total estimado</span>
+          <strong data-orcamento-modal-total>R$ 0,00</strong>
+        </div>
+        <div class="orcamento-modal__actions">
+          <button type="button" class="btn btn--cream btn--shimmer" data-orcamento-send>
+            <span>Enviar via WhatsApp</span>
+          </button>
+          <button type="button" class="orcamento-modal__clear" data-orcamento-clear>
+            Limpar seleção
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/orcamento.js" defer></script>
+</body>
+</html>
