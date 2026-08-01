@@ -2318,3 +2318,21 @@ body.has-orcamento-bar .footer { padding-bottom: 24px; }
   .gallery-cta__full { font-size: 0.9rem !important; }
 }
 
+
+
+/* =========================================================
+   AJUSTES V6 — galeria com fotos mistas (retrato + horizontal)
+   ========================================================= */
+
+/* Fundo do stage combina com a seção pra "letterbox" ficar elegante */
+.galeria-editorial__stage {
+  background: rgba(10, 31, 35, 0.85);
+}
+
+/* Foto horizontal específica: contain pra mostrar inteira, sem crop */
+.gallery-slide--landscape img,
+.gallery-slide--landscape video {
+  object-fit: contain !important;
+  background: rgba(10, 31, 35, 0.85);
+}
+
